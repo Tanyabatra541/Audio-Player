@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Music Player</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Luxurious+Roman&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="frame">
+                <img class="framephoto" src="https://unsplash.com/photos/tXiMrX3Gc-g/download?ixid=MnwxMjA3fDB8MXxzZWFyY2h8MTF8fGZyaWVuZHN8fDB8fHx8MTY0MTkxMzAyMQ&force=true&w=1920" alt="friendsphoto">
+                <h1 class="songname">Friends Theme Song</h1>
+                <p class="singername">The Rembrandts</p>
+                <p id="heart" onclick="changeColorOfHeart()">&hearts;</p>
+                <hr class="line"><hr class="doubleline">
+                <p class="dot"></p>
+                <p class="starttime">1:09</p>
+                <p class="endtime">3:37</p>
+                <img style="margin-left: 65px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/shuffle.png"/>
+                <img style="margin-left: 70px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/replay-10.png"/>
+                <img onclick="play()" style="margin-left: 20px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/play--v1.png"/>
+                <img onclick="pause()" style="margin-left: 10px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/pause--v1.png"/>
+                <img style="margin-left: 15px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/forward-10.png"/>
+                <img style="margin-left: 60px; cursor: pointer;" src="https://img.icons8.com/ios-glyphs/30/000000/repeat.png"/>
+                <script src="script.js"></script>
+                <audio controls id="music" style="display: none;">
+                    <source src="Y2Mate.is - Friends theme song - I'll be there for you - official music video HQ-SCQGnVrTsAM-160k-1638701406608.mp3" type="audio/mpeg">
+                </audio>
+        </div>
+    </body>
+</html>
